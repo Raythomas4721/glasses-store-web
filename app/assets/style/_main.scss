@@ -1,0 +1,319 @@
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+header {
+    width: 100%;
+    background: $primary;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+h1 a {
+    background-image: url(../images/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 48px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li a {
+        font-size: $fs-20;
+        line-height: 30px;
+        color: white;
+        padding: 25px 32px;
+        &:hover {
+            color: darken($primary, 40%);
+        }
+    }
+}
+
+.branch {
+    h2 {
+        margin-top: 96px;
+        font-size: $fs-48;
+        line-height: 72px;
+        padding-left: 16px;
+        border-left: 3px solid #9F1213;
+        font-weight: bold;
+    }
+    .selectArea {
+        display: flex;
+        p {
+            font-size: $fs-24;
+            line-height: 36px;
+            margin-top: 33px;
+            margin-right: 16px;
+            margin-bottom: 41px;
+        }
+        select {
+            display: inline-block;
+            width: 304px;
+            height: 38px;
+            margin-top: 33px;
+            option {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.storeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    > li {
+        width: calc((100% - 48px) / 3);              //  此為變更後
+    }
+    li h3 {
+        font-size: $fs-24;
+        line-height: 36px;
+        color: $wd-black;
+        padding-left: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 1px solid #00000020;
+    }
+}
+.areaInfo { 
+    gap: 8px;
+    border: 1px solid #00000020;
+    padding: 16px 24px;
+    li {
+        color: $wd-black;
+        font-size: $fs-20;
+        line-height: 30px;
+        span {
+            padding-right: 10px;
+        }
+    }
+}
+.moreInfo a p {
+    display: block;
+    padding: 16px;
+    background: $bg-black;
+    color: white;
+    margin-bottom: 48px;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    &:hover {
+        background-color: $primary;
+        }
+}
+
+
+
+
+footer {
+   background-color: $primary;
+   margin-top: 32px;
+   .footerCombo {
+        width: 100%;
+        display: flex;
+        .footerContent {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+        .footerIcon {
+            width: 30%;
+            justify-content: flex-end;
+        }
+   }
+   
+}
+.footerNav {
+    display: flex;
+    padding-top: 60px;
+    gap: 48px;
+    li a {
+        font-size: $fs-16;
+        line-height: 24px;
+        color: white;
+        &:hover {
+            color: darken($primary, 40%);
+        }
+    }
+}
+.footerContact {
+    margin-top: 36px;
+    li a {
+        color: white;
+        font-size: $fs-36;
+        line-height: 54px;
+        &:hover {
+            color: darken($primary, 40%);
+        }
+        span {
+            font-size: $fs-36;
+            padding-right: 20px;
+        }
+    }
+    
+
+}
+.footerIcon {
+    display: flex;
+    padding-top: 48px;
+    gap: 32px;
+    li a img {
+        max-width: 48px;
+        &:hover {
+            opacity: 40%;
+        }
+    }
+}
+.line {
+    margin-top: 32px;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+
+}
+.copyRight {
+    align-self: center;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li a {
+            color: white;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 24px;
+            &:hover {
+                color: darken($primary, 40%);
+            }
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .container {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+}
+
+@media (max-width: 992px) {
+    .storeList > li {
+        width: calc((100% - 24px) / 2);  
+    }
+}
+
+@media (max-width: 767px) {
+    .pa-0 {
+        padding-left: 0;
+        padding-right: 0;
+    } 
+    header {
+        div {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .navBar {
+        width: 100%;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+        }
+        li a {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            border: 1px solid white;
+            text-align: center;
+
+        }
+    }
+    .branch {
+        h2 {
+            margin-top: 40px;
+            font-size: $fs-24;
+            line-height: 36px;
+        }
+        .selectArea {
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 30px;
+                margin-right: 8px;
+                margin-bottom: 30px;
+            }
+            select {
+                width: 276px;
+            }
+        }
+    }
+    .storeList > li {
+        width: 96%;
+    }
+    footer {
+        .footerNav {
+            display: none;
+        }
+        .footerContact {
+            margin-top: 0;
+            padding-top: 24px;
+            li a {
+                font-size: 16px;
+                line-height: 24px;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .footerIcon {
+            gap: 8px;
+            margin-top: 0px;
+            padding-top: 24px;
+            li a img {
+                max-width: 24px;
+            }
+        }
+        .copyRight {
+            flex-direction: column;
+            padding-top: 20px;
+            width: 100%;
+            ul {
+                flex-direction: column;
+                li 
+                {
+                    margin-top: 8px;
+                    a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding: 8px 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}
