@@ -13,116 +13,244 @@ header {
     
 }
 
-h1 a {
-    background-image: url(../images/logo-white.png);
+// index page
+.banner {
+    max-width: 100%;
+    height: 787px;
+    background-image: url(../images/home-header.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80px;
-    height: 48px;
-    display: block;
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 16%;
+        h2 {
+            font-size: $fs-36;
+            line-height: 54px;
+            color: $secondary;
+        }
+        h3 {
+            font-size: 64px;
+            line-height: 96px;
+            color: $secondary;
+            font-weight: bold;
+        }
+        
+    }
 }
 
-.navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    li a {
-        font-size: $fs-20;
-        line-height: 30px;
+.banner-btn {
+    a {
         color: white;
-        padding: 25px 32px;
+        font-style: $fs-20;
+        line-height: 30px;
+        padding: 6px 12px;
+        background-color: $primary;
         &:hover {
-            color: darken($primary, 40%);
+            background-color: black;
         }
     }
 }
 
-.branch {
-    h2 {
-        margin-top: 96px;
+.home-title {
+    padding-top: 80px;
+    h4 {
         font-size: $fs-48;
         line-height: 72px;
-        padding-left: 16px;
-        border-left: 3px solid #9F1213;
+        color: $secondary;
         font-weight: bold;
     }
-    .selectArea {
+}
+
+.feature {
+    background: #FBF2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        padding-top: 36.5px;
+        padding-bottom: 80px;
         display: flex;
-        p {
-            font-size: $fs-24;
-            line-height: 36px;
-            margin-top: 33px;
-            margin-right: 16px;
-            margin-bottom: 41px;
-        }
-        select {
-            display: inline-block;
-            width: 304px;
-            height: 38px;
-            margin-top: 33px;
-            option {
-                font-size: 18px;
-                line-height: 26px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        li {
+            width: 23%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h5 {
+                font-size: $fs-24;
+                line-height: 36px;
+                color: $secondary;
+                font-weight: bold;
+                padding-top: 24px;
+            }
+            p {
+                font-size: $fs-16;
+                line-height: 24px;
+                padding-top: 8px;
             }
         }
     }
 }
 
-.storeList {
+.classicGl {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    > li {
-        width: calc((100% - 48px) / 3);              //  此為變更後
-    }
-    li h3 {
-        font-size: $fs-24;
-        line-height: 36px;
-        color: $wd-black;
-        padding-left: 24px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        border: 1px solid #00000020;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 48px;
+        padding-bottom: 80px;
+        gap: 24px;
+        li {
+            width: 30%;
+            h5 {
+                font-size: $fs-48;
+                line-height: 72px;
+                color: $primary;
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                padding-top: 8px;
+            }
+        }
     }
 }
-.areaInfo { 
-    gap: 8px;
-    border: 1px solid #00000020;
-    padding: 16px 24px;
-    li {
-        color: $wd-black;
+
+.designGl {
+    background: url(../images/index-bg.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        display: flex;
+        padding-top: 48px;
+        padding-bottom: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+            width: 43%;
+            h5 {
+                font-size: $fs-48;
+                line-height: 72px;
+                font-style: italic;
+                font-weight: bold;
+                background: white;
+                padding: 8px;
+                text-align: center;
+                color: $primary;
+            }
+        }
+        
+    }
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        padding-top: 48px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        li {
+            width: 23%;
+            border: 1px solid #DEE2E6;
+            box-shadow: 0px 2px 6px #00000029;
+            border-radius: 4px;
+            img {
+                border-radius: 4px 4px 0 0;
+            }
+            h6 {
+                padding-top: 16px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                font-size: $fs-16;
+                line-height: 24px;
+                font-weight: 600;
+            }
+            p {
+                padding: 0 16px;
+                padding-bottom: 96px;
+            }
+            span {
+                display: block;
+                padding-bottom: 16px;
+                padding-left: 16px;
+            }
+        }
+    }
+}
+.contain-636 {
+    max-width: 636px;
+    margin: 0 auto;
+}
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBF2F2;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 96px;
+    margin-right: 96px;
+    p {
         font-size: $fs-20;
         line-height: 30px;
-        span {
-            padding-right: 10px;
+        padding-top: 24px;
+        padding-bottom: 8px;
+    }
+    h6 {
+        font-size: $fs-16;
+        line-height: 24px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+    }
+    div {
+        display: flex;
+        padding-top: 16px;
+        padding-bottom: 48px;
+        p {
+            padding-left: 8px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    
+}
+
+.submit-form {
+    padding-bottom: 80px;
+    a {
+        font-size: $fs-16;
+        font-weight: bold;
+        line-height: 24px;
+        padding: 16px 176px;
+        background-color: $primary;
+        color: white;
+        &:hover {
+            background-color: black;
         }
     }
 }
-.moreInfo a p {
-    display: block;
-    padding: 16px;
-    background: $bg-black;
-    color: white;
-    margin-bottom: 48px;
-    font-size: 19px;
-    line-height: 27px;
-    text-align: center;
-    &:hover {
-        background-color: $primary;
-        }
-}
 
-
-
-
+// footer
 footer {
    background-color: $primary;
-   margin-top: 32px;
    .footerCombo {
         width: 100%;
         display: flex;
@@ -221,12 +349,54 @@ footer {
 }
 
 @media (max-width: 992px) {
+    //index
+    .classicGl {
+        ul {
+            li {
+                width: 90%;
+            }
+        }
+    }
+    //branch
     .storeList > li {
         width: calc((100% - 24px) / 2);  
     }
+    
 }
 
 @media (max-width: 767px) {
+    //index
+    .banner {
+        background-image: url(../images/home-header-sm.png);
+    }
+    .banner-content {
+        padding-right: 4%;
+    }
+    .feature {
+        ul {
+            li {
+                width: 45%;
+            }
+        }
+    }
+    .designGl {
+        background: url(../images/index-bg-md.png);
+        ul {
+            gap: 24px;
+            li {
+                width: 90%;
+            }
+        }
+    }
+    .review {
+        ul {
+            li {
+                width: 45%;
+            }
+        }
+    }
+    
+    //header
     .pa-0 {
         padding-left: 0;
         padding-right: 0;
@@ -252,6 +422,8 @@ footer {
 
         }
     }
+
+    //branch
     .branch {
         h2 {
             margin-top: 40px;
@@ -274,6 +446,7 @@ footer {
     .storeList > li {
         width: 96%;
     }
+    //footer
     footer {
         .footerNav {
             display: none;
@@ -316,4 +489,18 @@ footer {
         }
     }
     
+}
+
+@media (max-width: 600px) {
+    .banner-content {
+        padding-right: 4%;
+        h2 {
+            font-size: $fs-16;
+            line-height: 24px;
+        }
+        h3 {
+            font-size: $fs-24;
+            line-height: 36px;
+        }
+    }
 }

@@ -1,0 +1,104 @@
+// branch page
+h1 a {
+    background-image: url(../images/logo-white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 48px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li a {
+        font-size: $fs-20;
+        line-height: 30px;
+        color: white;
+        padding: 25px 32px;
+        &:hover {
+            color: darken($primary, 40%);
+        }
+    }
+}
+
+.branch {
+    h2 {
+        margin-top: 96px;
+        font-size: $fs-48;
+        line-height: 72px;
+        padding-left: 16px;
+        border-left: 3px solid #9F1213;
+        font-weight: bold;
+    }
+    .selectArea {
+        display: flex;
+        p {
+            font-size: $fs-24;
+            line-height: 36px;
+            margin-top: 33px;
+            margin-right: 16px;
+            margin-bottom: 41px;
+        }
+        select {
+            display: inline-block;
+            width: 304px;
+            height: 38px;
+            margin-top: 33px;
+            option {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.storeList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    > li {
+        width: calc((100% - 48px) / 3);              //  此為變更後
+    }
+    li h3 {
+        font-size: $fs-24;
+        line-height: 36px;
+        color: $wd-black;
+        padding-left: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 1px solid #00000020;
+    }
+}
+.areaInfo { 
+    gap: 8px;
+    border: 1px solid #00000020;
+    padding: 16px 24px;
+    li {
+        color: $wd-black;
+        font-size: $fs-20;
+        line-height: 30px;
+        span {
+            padding-right: 10px;
+        }
+    }
+}
+.moreInfo a p {
+    display: block;
+    padding: 16px;
+    background: $bg-black;
+    color: white;
+    margin-bottom: 48px;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    &:hover {
+        background-color: $primary;
+        }
+}
