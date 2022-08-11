@@ -212,15 +212,8 @@ header {
         font-style: italic;
         padding-top: 8px; }
 
-.designGl_1 {
-  height: 240px;
-  background: url(../images/home-section4-1.png) no-repeat;
-  background-size: cover; }
-
-.designGl_2 {
-  height: 240px;
-  background: url(../images/home-section4-2.png) no-repeat;
-  background-size: cover; }
+.design-mobile {
+  display: none; }
 
 .designGl {
   background: url(../images/index-bg.png) no-repeat;
@@ -561,7 +554,13 @@ footer {
           line-height: 24px;
           padding: 8px 0; } }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px; }
+  header .pa-0 {
+    padding-left: 0;
+    padding-right: 0; }
   .banner {
     height: 396px; }
     .banner .banner-content h2 {
@@ -585,7 +584,26 @@ footer {
     background: url(../images/index-bg-sm.png); }
     .designGl ul {
       padding-top: 24px;
-      padding-bottom: 40px; } }
+      padding-bottom: 40px; }
+      .designGl ul .design-desktop {
+        display: none; }
+      .designGl ul .design-mobile {
+        display: block; }
+  .review ul {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    gap: 16px; }
+    .review ul li {
+      width: 90%; }
+  .contact-form {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px; }
+  .contact-form div {
+    padding-bottom: 24px; }
+  .submit-form {
+    padding-bottom: 40px; } }
 
 h1 a {
   background-image: url(../images/logo-white.png);
