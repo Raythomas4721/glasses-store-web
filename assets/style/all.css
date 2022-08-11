@@ -81,6 +81,7 @@ header {
   height: 787px;
   background-image: url(../images/home-header.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,9 +212,20 @@ header {
         font-style: italic;
         padding-top: 8px; }
 
+.designGl_1 {
+  height: 240px;
+  background: url(../images/home-section4-1.png) no-repeat;
+  background-size: cover; }
+
+.designGl_2 {
+  height: 240px;
+  background: url(../images/home-section4-2.png) no-repeat;
+  background-size: cover; }
+
 .designGl {
   background: url(../images/index-bg.png) no-repeat;
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,6 +237,7 @@ header {
       -ms-flex-align: center;
           align-items: center; }
   .designGl ul {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -236,7 +249,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
     .designGl ul li {
-      width: 43%; }
+      width: 46%; }
       .designGl ul li h5 {
         font-size: 48px;
         line-height: 72px;
@@ -461,13 +474,15 @@ footer {
 
 @media (max-width: 767px) {
   .banner {
-    background-image: url(../images/home-header-sm.png); }
-  .banner-content {
-    padding-right: 4%; }
+    background-image: url(../images/home-header-sm.png);
+    background-position: center; }
+    .banner .banner-content {
+      padding-right: 4%; }
   .feature ul li {
     width: 45%; }
   .designGl {
-    background: url(../images/index-bg-md.png); }
+    background: url(../images/index-bg-md.png);
+    background-position: center; }
     .designGl ul {
       gap: 24px; }
       .designGl ul li {
@@ -546,15 +561,31 @@ footer {
           line-height: 24px;
           padding: 8px 0; } }
 
-@media (max-width: 600px) {
-  .banner-content {
-    padding-right: 4%; }
-    .banner-content h2 {
+@media (max-width: 480px) {
+  .banner {
+    height: 396px; }
+    .banner .banner-content h2 {
       font-size: 16px;
       line-height: 24px; }
-    .banner-content h3 {
+    .banner .banner-content h3 {
       font-size: 24px;
-      line-height: 36px; } }
+      line-height: 36px; }
+  .home-title {
+    padding-top: 40px; }
+    .home-title h4 {
+      font-size: 24px;
+      line-height: 36px; }
+  .feature ul {
+    padding-bottom: 40px; }
+    .feature ul li {
+      width: 90%; }
+      .feature ul li img {
+        width: 83px; }
+  .designGl {
+    background: url(../images/index-bg-sm.png); }
+    .designGl ul {
+      padding-top: 24px;
+      padding-bottom: 40px; } }
 
 h1 a {
   background-image: url(../images/logo-white.png);
